@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+<body onbeforeunload="return myFunction()">
 This prank was brought to you by Prank and Trick Association</body>
 <script>
 function thatthing(){
@@ -9,6 +9,9 @@ alert("This prank was brought to you by Prank and Trick Association");
 window.open(window.location,'pop','width=1,height=1,resizable=no,scrollbars=no'); 
 thatthing();
 
+}
+  function myFunction() {
+    return "Write something clever here...";
 }
 thatthing();
 </script>
